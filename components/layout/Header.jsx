@@ -6,14 +6,14 @@ const Header = ({ roboto }) => {
   return (
     <header className={`${roboto.variable} font-roboto bg-[#1F2937] py-4`}>
       <div className="max-w-6xl mx-auto px-2">
-        <div className="flex flex-wrap items-center gap-4">
+        <div className="flex flex-wrap items-center justify-between gap-4">
           <div>
             <h4 className="font-bold text-[#5d66e1] font-mono text-3xl">
               <Link href='/'>Github Infos</Link>
             </h4>
           </div>
           <div>
-            <ul className="flex gap-3 ms-6">
+            <ul className="flex gap-3">
               <li>
                 <Link href='/' className='font-medium bg-slate-900 text-white px-4 py-2 rounded-md hover:bg-slate-700 hover:text-white'>Home</Link>
               </li>
@@ -26,7 +26,9 @@ const Header = ({ roboto }) => {
             </ul>
           </div>
           <div>
-
+            <p className="text-right">
+              <Link href='/about' className='font-bold bg-[#5d66e1] text-white px-6 py-3 rounded-md'>About</Link>
+            </p>
           </div>
         </div>
       </div>
