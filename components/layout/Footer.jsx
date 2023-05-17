@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Footer = () => {
+const Footer = ({ roboto }) => {
   return (
-    <footer>Footer</footer>
+    <footer className={`${roboto.variable} font-roboto`}>
+      Footer
+    </footer>
   )
 }
 

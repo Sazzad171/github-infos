@@ -13,10 +13,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        volkhov: ['var(--font-roboto)', ...fontFamily.sans],
+        roboto: ['var(--font-roboto)', ...fontFamily.sans],
       }
     },
   },
   plugins: [],
 }
-

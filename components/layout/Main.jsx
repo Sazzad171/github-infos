@@ -16,11 +16,11 @@ import Footer from "./Footer";
 const MainLayout = ({ children }) => {
   return (
     <>
-      <Header />
-      <main className={`${roboto.variable}`}>
+      <Header roboto={roboto} />
+      <main className={`${roboto.variable} font-roboto`}>
         { children }
       </main>
-      <Footer />
+      <Footer roboto={roboto} />
     </>
   )
 }

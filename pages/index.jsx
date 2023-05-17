@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
 
       <section>
-        <p className="text-lg font-bold font-roboto">
+        <p className="text-lg font-bold">
           Hello world!
         </p>
       </section>
