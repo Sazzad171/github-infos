@@ -17,7 +17,7 @@ const MainLayout = ({ children }) => {
   return (
     <>
       <Header roboto={roboto} />
-      <main className={`${roboto.variable} font-roboto`}>
+      <main className={`${roboto.variable} font-roboto min-h-[calc(100vh-124px)]`}>
         { children }
       </main>
       <Footer roboto={roboto} />

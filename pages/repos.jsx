@@ -5,3 +5,5 @@ export const Repos = () => {
     <div>repos</div>
   )
 }
+
+export default Repos
