@@ -1,17 +1,12 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
-const Users = () => {
+const Users = ({usersData}) => {
 
   const [users, setUsers] = useState([]);
-
+  
   useEffect(() => {
-    const getUsers = async () => {
-      const usersData = await axios.get(process.env.NEXT_PUBLIC_BASE_URL +'/users');
-      setUsers(usersData.data);
-    }
-
-    getUsers();
+    setUsers(usersData);
   }, []);
 
   return (
@@ -48,6 +43,17 @@ const Users = () => {
       </div>
     </section>
   )
+}
+
+export async function getServerSideProps() {
+  const res = await axios.get(process.env.BASE_URL + '/users');
+  const usersData = await res.data;
+
+  return {
+    props: {
+      usersData
+    }
+  }
 }
 
 export default Users
