@@ -23,8 +23,8 @@ const Users = () => {
         <div className="flex flex-wrap -mx-2">
           {
             users.map((item, i) => (
-              <div className="w-full md:w-1/2 lg:w-1/3 px-2">
-                <div className=' bg-slate-100 rounded-md p-4'>
+              <div className="w-full md:w-1/2 lg:w-1/3 px-2 mb-4" key={i}>
+                <div className=' bg-slate-100 rounded-md shadow-md p-4'>
                   <div className="flex gap-4">
                     <h4 className='font-medium text-xl'>User className</h4>
                   </div>
