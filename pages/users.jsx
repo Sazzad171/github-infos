@@ -1,13 +1,9 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 const Users = ({usersData}) => {
 
-  const [users, setUsers] = useState([]);
-  
-  useEffect(() => {
-    setUsers(usersData);
-  }, []);
+  const [users, setUsers] = useState(usersData);
 
   return (
     <section className="py-4">
@@ -47,11 +43,10 @@ const Users = ({usersData}) => {
 
 export async function getServerSideProps() {
   const res = await axios.get(process.env.BASE_URL + '/users');
-  const usersData = await res.data;
 
   return {
     props: {
-      usersData
+      usersData: res.data
     }
   }
 }
