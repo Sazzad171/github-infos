@@ -23,11 +23,16 @@ const Header = ({ roboto }) => {
               <li>
                 <Link href='/repos' className='font-medium text-gray-200 px-4 py-2 rounded-md hover:bg-slate-700 hover:text-white'>Repositories</Link>
               </li>
+              <li>
+                <Link href='/profile' className='font-medium text-gray-200 px-4 py-2 rounded-md hover:bg-slate-700 hover:text-white'>Profile</Link>
+              </li>
             </ul>
           </div>
           <div>
             <p className="text-right">
-              <Link href='/about' className='font-bold bg-[#5d66e1] text-white px-6 py-3 rounded-md'>About</Link>
+              <Link href='/about' className='font-bold bg-[#5d66e1] text-white px-6 py-3 rounded-md me-2'>About</Link>
+              <Link href='/signin' className='font-bold bg-emerald-700 text-white px-6 py-3 rounded-md me-2'>Signin</Link>
+              <Link href='/signout' className='font-bold bg-rose-600 text-white px-6 py-3 rounded-md'>Signout</Link>
             </p>
           </div>
         </div>
